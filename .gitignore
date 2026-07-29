@@ -1,0 +1,17 @@
+# Data & Outputs
+data/raw_fastq/*.fastq.gz
+data/raw_fastq/*.fq.gz
+results/bactopia_output/
+*.bam
+*.bai
+*.sam
+
+# Nextflow Scratch Folders
+.nextflow/
+.nextflow.log*
+work/
+
+# System / OS
+.DS_Store
+*.swp
+*~

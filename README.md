@@ -1,3 +1,4 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./license)
 # Bactopia Bacterial Phyloresistomics Pipeline
 
 An automated, reproducible workflow for bacterial pathogen genomics, combining **Bactopia (Nextflow)** execution with downstream **phylogenetic reconstruction** and **AMR resistome profiling**.

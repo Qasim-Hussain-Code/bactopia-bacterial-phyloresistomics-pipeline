@@ -16,3 +16,4 @@ work/
 *.swp
 *.csv
 *.tsv
+*.fastq.gz

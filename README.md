@@ -14,3 +14,5 @@ An automated, reproducible workflow for bacterial pathogen genomics, combining *
 1. Create environment: `conda env create -f environment.yml`
 2. Prepare samples manifest in `config/samples.tsv`
 3. Execute Bactopia: `bash workflow/01_run_bactopia.sh`
+
+# Continued..

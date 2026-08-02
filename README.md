@@ -15,4 +15,4 @@ An automated, reproducible workflow for bacterial pathogen genomics, combining *
 2. Prepare samples manifest in `config/samples.tsv`
 3. Execute Bactopia: `bash workflow/01_run_bactopia.sh`
 
-# Continued..
+# To be continued..

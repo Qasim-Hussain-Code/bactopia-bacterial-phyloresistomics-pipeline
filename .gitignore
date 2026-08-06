@@ -85,6 +85,8 @@ conda/
 .DS_Store
 *.swp
 *~
+*.csv
+*.tsv
 
 # Keep empty directory placeholders
 !.gitkeep

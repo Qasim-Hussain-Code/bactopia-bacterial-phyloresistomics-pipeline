@@ -1,4 +1,6 @@
-# Data & Outputs
+# ---------------------------------------------------------------------------
+# Project data & outputs
+# ---------------------------------------------------------------------------
 data/raw_fastq/*.fastq.gz
 data/raw_fastq/*.fq.gz
 results/bactopia_output/
@@ -6,12 +8,83 @@ results/bactopia_output/
 *.bai
 *.sam
 
-# Nextflow Scratch Folders
+# ---------------------------------------------------------------------------
+# Nextflow scratch
+# ---------------------------------------------------------------------------
 .nextflow/
 .nextflow.log*
+.nextflow.pid
 work/
 
+# ---------------------------------------------------------------------------
+# Bactopia test run  (workflow/test.sh -> bactopia -profile test,standard)
+# Default --outdir is ./bactopia
+# ---------------------------------------------------------------------------
+bactopia/
+
+# ---------------------------------------------------------------------------
+# Bactopia tutorial run  (https://bactopia.io/tutorial)
+# ---------------------------------------------------------------------------
+# --outdir values used in the tutorial
+ena-single-sample/
+ena-multiple-samples/
+local-single-sample/
+local-multiple-samples/
+
+# Any bactopia output tree, wherever --outdir points
+# (per-run reports, merged-results, nf-reports for bactopia/staphtyper/mashtree)
+bactopia-runs/
+
+# FASTQs staged for the "local samples" sections
+fastqs/
+
+# `bactopia search --query PRJNA480016`
+bactopia-metadata.txt
+bactopia-accessions.txt
+bactopia-filtered.txt
+bactopia-search.txt
+
+# `bactopia prepare` FOFN and the mashtree exclusion list
+samples.txt
+exclude.txt
+
+# `bactopia summary --bactopia-path ...`
+bactopia-report.tsv
+bactopia-exclude.tsv
+bactopia-summary.txt
+
+# Reference datasets / container caches pulled on first run
+bactopia-datasets/
+datasets/
+singularity/
+.singularity/
+conda/
+.conda/
+
+# ---------------------------------------------------------------------------
+# Sequence & analysis artifacts produced by either run
+# ---------------------------------------------------------------------------
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+*.fna
+*.fna.gz
+*.faa.gz
+*.ffn.gz
+*.gbk.gz
+*.gff.gz
+*.msh
+*.sig
+*_fastqc.html
+*_fastqc.zip
+
+# ---------------------------------------------------------------------------
 # System / OS
+# ---------------------------------------------------------------------------
 .DS_Store
 *.swp
 *~
+
+# Keep empty directory placeholders
+!.gitkeep

@@ -89,6 +89,7 @@ conda/
 *.tsv
 *.log
 *.out
+*.err
 
 # Keep empty directory placeholders
 !.gitkeep

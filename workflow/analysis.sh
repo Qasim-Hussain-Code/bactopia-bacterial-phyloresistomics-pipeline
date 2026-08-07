@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Use bactopia to process a single sample from SRA/ENA
+# Use bactopia to analyze a single sample from SRA/ENA
 bactopia \
     --accession SRX4563634 \
     --coverage 100 \

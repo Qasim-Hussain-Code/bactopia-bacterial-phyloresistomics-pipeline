@@ -3,13 +3,27 @@
 # ---------------------------------------------------------------------------
 data/raw_fastq/*.fastq.gz
 data/raw_fastq/*.fq.gz
+data/raw_fastq/*.fastq
+data/raw_fastq/*.fq
+data/metadata/*.csv
+data/metadata/*.tsv
+data/metadata/*.xlsx
 results/bactopia_output/
+results/phylo_trees/*.treefile
+results/phylo_trees/*.nwk
+results/phylo_trees/*.iqtree
+results/phylo_trees/*.log
+results/resistome_matrices/*.csv
+results/resistome_matrices/*.tsv
+results/publication_figures/*.pdf
+results/publication_figures/*.png
+results/publication_figures/*.svg
 *.bam
 *.bai
 *.sam
 
 # ---------------------------------------------------------------------------
-# Nextflow scratch
+# Nextflow scratch (project root)
 # ---------------------------------------------------------------------------
 .nextflow/
 .nextflow.log*
@@ -17,10 +31,22 @@ results/bactopia_output/
 work/
 
 # ---------------------------------------------------------------------------
+# Nextflow scratch (workflow directory)
+# ---------------------------------------------------------------------------
+workflow/.nextflow/
+workflow/.nextflow.log*
+workflow/work/
+
+# ---------------------------------------------------------------------------
 # Bactopia test run  (workflow/test.sh -> bactopia -profile test,standard)
 # Default --outdir is ./bactopia
 # ---------------------------------------------------------------------------
 bactopia/
+
+# ---------------------------------------------------------------------------
+# Bactopia analysis output (workflow/analysis.sh)
+# ---------------------------------------------------------------------------
+workflow/ena-single-sample/
 
 # ---------------------------------------------------------------------------
 # Bactopia tutorial run  (https://bactopia.io/tutorial)
@@ -85,11 +111,9 @@ conda/
 .DS_Store
 *.swp
 *~
-*.csv
-*.tsv
-*.log
-*.out
-*.err
 
-# Keep empty directory placeholders
+# ---------------------------------------------------------------------------
+# Keep directory structure placeholders
+# ---------------------------------------------------------------------------
 !.gitkeep
+!**/README.md

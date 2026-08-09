@@ -118,4 +118,4 @@ Bactopia and its internal tool dependencies are installed separately via `workfl
 
 ## License
 
-This project is licensed under the MIT License. See [LICENSE](./LICENSE) for details.
+This project is licensed under the MIT License. Please see [LICENSE](./LICENSE) for details.

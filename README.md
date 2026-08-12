@@ -1,6 +1,6 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
-# Bactopia Bacterial Phyloresistomics Workflow
+# Bactopia: A Bacterial Phyloresistomics Workflow
 
 A reproducible, Nextflow-based workflow for integrated phylogenomic and resistome profiling of bacterial pathogens. This pipeline leverages [Bactopia](https://bactopia.github.io/) as its core analytical engine, combining automated genome assembly, annotation, multi-locus sequence typing, and antimicrobial resistance gene detection into a single, end-to-end framework.
 

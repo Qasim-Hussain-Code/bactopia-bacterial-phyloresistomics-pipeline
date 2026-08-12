@@ -12,7 +12,7 @@ This repository extends the standard Bactopia workflow with downstream phylogene
 
 ## Analytical Overview
 
-The pipeline proceeds through three major phases:
+The pipeline proceeds through three core phases:
 
 **Phase 1: Bactopia Core Processing.**
 Raw paired-end Illumina reads (or SRA/ENA accessions) are processed through quality control (fastp), de novo assembly (Shovill/SPAdes), gene annotation (Prokka), genomic sketching (Mash, Sourmash), MLST typing, and AMR gene detection (AMRFinderPlus). Each module produces standardised per-sample outputs that are merged into cohort-level summary tables.

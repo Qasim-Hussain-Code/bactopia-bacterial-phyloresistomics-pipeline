@@ -6,7 +6,7 @@ A reproducible, Nextflow-based workflow for integrated phylogenomic and resistom
 
 ## Rationale
 
-Whole-genome sequencing has become the standard for characterising bacterial pathogens in both clinical and epidemiological settings. However, transforming raw sequencing reads into interpretable genomic profiles (sequence types, resistance determinants, phylogenetic placement) typically requires the execution of numerous standalone tools, each with its own installation, parameterisation, and output format. Bactopia addresses this complexity by wrapping over 150 bioinformatics tools into a unified Nextflow pipeline, ensuring reproducibility and scalability from single isolates to population-scale datasets.
+Whole-genome sequencing has become the standard for characterising bacterial pathogens in both clinical and epidemiological settings. However, transforming raw sequencing reads into interpretable genomic profiles (sequence types, resistance determinants, phylogenetic placement) typically requires the execution of numerous standalone tools, each with its own installation, parameterisation, and output format. Bactopia addresses this complexity by wrapping over 150 bioinformatics tools into a unified Nextflow workflow, ensuring reproducibility and scalability from single isolates to population-scale datasets.
 
 This repository extends the standard Bactopia workflow with downstream phylogenetic reconstruction (via IQ-TREE) and resistome matrix generation, enabling the joint analysis of evolutionary relationships and antimicrobial resistance across strain collections.
 

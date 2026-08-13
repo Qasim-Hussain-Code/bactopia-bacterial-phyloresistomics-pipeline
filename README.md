@@ -1,18 +1,18 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
-# Bactopia Bacterial Phyloresistomics Pipeline
+# Bactopia: A Bacterial Phyloresistomics Workflow
 
 A reproducible, Nextflow-based workflow for integrated phylogenomic and resistome profiling of bacterial pathogens. This pipeline leverages [Bactopia](https://bactopia.github.io/) as its core analytical engine, combining automated genome assembly, annotation, multi-locus sequence typing, and antimicrobial resistance gene detection into a single, end-to-end framework.
 
 ## Rationale
 
-Whole-genome sequencing has become the standard for characterising bacterial pathogens in both clinical and epidemiological settings. However, transforming raw sequencing reads into interpretable genomic profiles (sequence types, resistance determinants, phylogenetic placement) typically requires the execution of numerous standalone tools, each with its own installation, parameterisation, and output format. Bactopia addresses this complexity by wrapping over 150 bioinformatics tools into a unified Nextflow pipeline, ensuring reproducibility and scalability from single isolates to population-scale datasets.
+Whole-genome sequencing has become the standard for characterising bacterial pathogens in both clinical and epidemiological settings. However, transforming raw sequencing reads into interpretable genomic profiles (sequence types, resistance determinants, phylogenetic placement) typically requires the execution of numerous standalone tools, each with its own installation, parameterisation, and output format. Bactopia addresses this complexity by wrapping over 150 bioinformatics tools into a unified Nextflow workflow, ensuring reproducibility and scalability from single isolates to population-scale datasets.
 
 This repository extends the standard Bactopia workflow with downstream phylogenetic reconstruction (via IQ-TREE) and resistome matrix generation, enabling the joint analysis of evolutionary relationships and antimicrobial resistance across strain collections.
 
 ## Analytical Overview
 
-The pipeline proceeds through three major phases:
+The pipeline proceeds through three core phases:
 
 **Phase 1: Bactopia Core Processing.**
 Raw paired-end Illumina reads (or SRA/ENA accessions) are processed through quality control (fastp), de novo assembly (Shovill/SPAdes), gene annotation (Prokka), genomic sketching (Mash, Sourmash), MLST typing, and AMR gene detection (AMRFinderPlus). Each module produces standardised per-sample outputs that are merged into cohort-level summary tables.
@@ -118,4 +118,4 @@ Bactopia and its internal tool dependencies are installed separately via `workfl
 
 ## License
 
-This project is licensed under the MIT License. See [LICENSE](./LICENSE) for details.
+This project is licensed under the MIT License. Please see [LICENSE](./LICENSE) for details.

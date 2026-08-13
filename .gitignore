@@ -95,6 +95,7 @@ conda/
 *.fq
 *.fq.gz
 *.fna
+*.faa
 *.fna.gz
 *.faa.gz
 *.ffn.gz
